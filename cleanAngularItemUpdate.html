@@ -1,12 +1,12 @@
 <!DOCTYPE html>  
-<html ng-app>  
+<html ng-app="todolistapp">  
   <head>  
     <meta charset="utf-8">    
     <title>邊學AngularJS邊做Todo List (4)</title>  
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>  
-    <script type="text/javascript" src="js/controllers.js"></script>  
+    <script type="text/javascript" src="controllers.js"></script>  
   </head>  
-  <body ng-controller="TodoCrtlUpdate">  
+  <body ng-controller="TodoControllerRm">  
       <h1>Todo List</h1>  
       <form ng-submit="addItem()">  
         <input type="text" ng-model="newItem" name="newItem" />  

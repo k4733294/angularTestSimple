@@ -11,7 +11,7 @@ function todocontroller($scope) {
 		$scope.todoList.push($scope.newItem)
 	}
 }
-function TodoCrtlRemovable($scope) {  
+function TodoControllerRm($scope) {  
   $scope.newItem = '';  
   $scope.todoList = [];  
   $scope.addItem = function(){  
@@ -23,4 +23,11 @@ function TodoCrtlRemovable($scope) {
   $scope.removeItem = function(item){  
       item.isFinish = true;  
   }  
+  $scope.edit = function(item){  
+     item.editing = true;  
+ }  
+  
+ $scope.save = function(item){  
+   delete item.editing;  
+ }  
 }  
